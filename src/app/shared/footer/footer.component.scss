@@ -1,16 +1,11 @@
+$primary-color: #0f3460;
+$background-color: #f0f0f0;
+
 .footer {
-  background-color: #16213e;
-  color: #ffffff;
-
-  .social-icons a {
-    color: #ffffff;
-    transition: color 0.3s ease;
-    &:hover {
-      color: #e94560;
-    }
-  }
-
-  p {
-    margin-bottom: 0.5rem;
-  }
+  background-color: $primary-color;
+  color: $background-color;
+  padding: 2rem;
+  text-align: center;
+  position: relative; /* Change from 'fixed' to 'relative' */
+  width: 100%; /* Ensure full-width footer */
 }

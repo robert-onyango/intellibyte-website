@@ -1,1 +1,20 @@
-<p>projects works!</p>
+<div class="container my-5">
+  <h2 class="mb-4">Our Projects</h2>
+  <p class="lead">
+    Explore some of the successful projects we've delivered, demonstrating our expertise and collaborative approach.
+  </p>
+
+  <div class="row mt-5">
+    <!-- Project Item -->
+    <div class="col-md-6 mb-5" *ngFor="let project of projects">
+      <div class="card h-100 shadow-sm">
+        <!-- <img [src]="project.image" class="card-img-top" [alt]="project.title" /> -->
+        <div class="card-body">
+          <h5 class="card-title">{{ project.title }}</h5>
+          <p class="card-text">{{ project.description }}</p>
+          <a [routerLink]="project.link" class="btn btn-outline-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

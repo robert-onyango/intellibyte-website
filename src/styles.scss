@@ -31,7 +31,7 @@ body {
 }
 
 main {
-  padding-top: 2rem; /* Optional, for extra spacing */
+  padding-top: 5rem; /* Optional, for extra spacing */
 }
 
 /* Footer styles */
@@ -40,4 +40,6 @@ main {
   color: $background-color;
   padding: 2rem;
   text-align: center;
+  width: 100%;
+  position: relative; /* Ensure it's a regular footer */
 }

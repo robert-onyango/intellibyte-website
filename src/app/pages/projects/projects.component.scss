@@ -1,0 +1,19 @@
+$primary-color: #0f3460;
+$secondary-color: #e94560;
+
+h2 {
+  color: $primary-color;
+}
+
+.card-title {
+  color: $secondary-color;
+}
+
+.btn-outline-primary {
+  color: $secondary-color;
+  border-color: $secondary-color;
+  &:hover {
+    background-color: $secondary-color;
+    color: #fff;
+  }
+}

@@ -1,0 +1,14 @@
+/* src/app/app.component.scss */
+.content-wrapper {
+  min-height: calc(100vh - 150px); /* Adjust based on the footer's height */
+  padding-bottom: 3rem; /* Space between content and footer */
+}
+
+.footer {
+  background-color: $primary-color;
+  color: $background-color;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  position: relative; /* Footer is part of the natural page flow */
+}
