@@ -1,1 +1,19 @@
-<p>services works!</p>
+<div class="container my-5">
+  <h2 class="mb-4">Our Services</h2>
+  <p class="lead">
+    We offer a comprehensive suite of services designed to meet your business's unique technology needs, guided by our 'Synergos' philosophy.
+  </p>
+
+  <div class="row mt-5">
+    <!-- Service Item -->
+    <div class="col-md-6 mb-5" *ngFor="let service of services">
+      <div class="media">
+        <i [class]="service.icon + ' fa-3x text-primary me-4'"></i>
+        <div class="media-body">
+          <h4 class="mt-0">{{ service.title }}</h4>
+          <p>{{ service.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

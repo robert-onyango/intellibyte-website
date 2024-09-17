@@ -1,0 +1,16 @@
+$primary-color: #0f3460;
+$secondary-color: #e94560;
+
+h2 {
+  color: $primary-color;
+}
+
+.media {
+  background-color: #fff;
+  padding: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  .fa-3x {
+    color: $secondary-color;
+  }
+}
