@@ -1,0 +1,53 @@
+$primary-color: #0f3460;
+$secondary-color: #e94560;
+$accent-color: #16213e;
+$background-color: #f0f0f0;
+$text-color: #1a1a2e;
+
+// .hero-image {
+//   background: linear-gradient(
+//       rgba(26, 26, 46, 0.6),
+//       rgba(26, 26, 46, 0.6)
+//     ),
+//     url('assets/ai-generated/hero-image.jpg') no-repeat center center;
+//   background-size: cover;
+//   height: 100vh;
+//   display: flex;
+//   align-items: center;
+//   color: $background-color;
+// }
+
+.card {
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.btn-primary {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  &:hover {
+    background-color: lighten($secondary-color, 10%);
+    border-color: lighten($secondary-color, 10%);
+  }
+}
+
+.btn-outline-primary {
+  color: $secondary-color;
+  border-color: $secondary-color;
+  &:hover {
+    background-color: $secondary-color;
+    color: #fff;
+  }
+}
+
+.social-icons a {
+  color: #ffffff;
+  transition: color 0.3s ease;
+  &:hover {
+    color: $secondary-color;
+  }
+}

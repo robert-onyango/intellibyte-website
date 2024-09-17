@@ -1,0 +1,33 @@
+// @import 'src/styles/variables';
+$primary-color: #2C3E50; // Dark Blue
+$secondary-color: #18BC9C; // Teal
+
+
+
+h2, h3 {
+  color: $primary-color;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  li {
+    padding-left: 1.5em;
+    position: relative;
+    margin-bottom: 0.5em;
+    &:before {
+      content: '\f00c'; // Font Awesome check icon
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: $secondary-color;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

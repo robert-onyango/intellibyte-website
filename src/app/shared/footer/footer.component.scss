@@ -1,0 +1,16 @@
+.footer {
+  background-color: #16213e;
+  color: #ffffff;
+
+  .social-icons a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+    &:hover {
+      color: #e94560;
+    }
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}

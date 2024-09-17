@@ -1,0 +1,51 @@
+<!-- Core Capabilities Section -->
+<section class="container my-5">
+  <h2 class="text-center mb-5">Our Core Capabilities</h2>
+  <div class="row">
+    <!-- Capability Card -->
+    <div class="col-md-4 mb-4" *ngFor="let capability of capabilities">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body text-center">
+          <i [class]="capability.icon + ' fa-3x mb-3 text-primary'"></i>
+          <h5 class="card-title fw-bold">{{ capability.title }}</h5>
+          <p class="card-text">{{ capability.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Differentiators Section -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">What Sets Us Apart</h2>
+    <div class="row">
+      <!-- Differentiator -->
+      <div class="col-md-4 mb-4" *ngFor="let differentiator of differentiators">
+        <div class="text-center">
+          <i [class]="differentiator.icon + ' fa-3x mb-3 text-secondary'"></i>
+          <h5 class="fw-bold">{{ differentiator.title }}</h5>
+          <p>{{ differentiator.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Projects Section -->
+<section class="container my-5">
+  <h2 class="text-center mb-5">Featured Projects</h2>
+  <div class="row">
+    <!-- Project Card -->
+    <div class="col-md-4 mb-4" *ngFor="let project of featuredProjects">
+      <div class="card h-100 shadow-sm">
+        <img [src]="project.image" class="card-img-top" [alt]="project.title" />
+        <div class="card-body">
+          <h5 class="card-title">{{ project.title }}</h5>
+          <p class="card-text">{{ project.description }}</p>
+          <a [routerLink]="project.link" class="btn btn-outline-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-color: #2C3E50; // Dark Blue
+$secondary-color: #18BC9C; // Teal
+$accent-color: #F39C12; // Orange
+$background-color: #ECF0F1; // Light Gray
+$text-color: #2C3E50; // Dark Blue
+
+// Bootstrap overrides
+$theme-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "success": $accent-color
+);
+
+
+// Global styles
+$navbar-height: 100px;  /* Approximate height of the navbar */
+
+.navbar {
+  background-color: $primary-color;
+}
+
+.nav-link {
+  color: $background-color !important;
+}
+
+/* Ensure enough space between the navbar and the content */
+body {
+  background-color: $background-color;
+  color: $text-color;
+  padding-top: $navbar-height;  /* Adds space below the navbar */
+}
+
+main {
+  padding-top: 2rem; /* Optional, for extra spacing */
+}
+
+/* Footer styles */
+.footer {
+  background-color: $primary-color;
+  color: $background-color;
+  padding: 2rem;
+  text-align: center;
+}
