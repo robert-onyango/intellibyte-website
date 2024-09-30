@@ -1,0 +1,35 @@
+/* src/app/pages/projects/vmware/vmware.component.scss */
+$primary-color: #2C3E50; // Dark Blue
+
+.container {
+  padding: 2rem 0;
+}
+
+h1 {
+  color: $primary-color;
+  margin-bottom: 1.5rem;
+}
+
+.project-overview,
+.project-objective,
+.project-timeline,
+.project-outcomes {
+  margin-bottom: 2rem;
+}
+
+.project-overview ul,
+.project-timeline ul,
+.project-outcomes ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.project-overview ul li,
+.project-timeline ul li,
+.project-outcomes ul li {
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 200px;
+}

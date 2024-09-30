@@ -7,6 +7,13 @@ h2 {
 
 .card-title {
   color: $secondary-color;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .btn-outline-primary {
@@ -15,5 +22,52 @@ h2 {
   &:hover {
     background-color: $secondary-color;
     color: #fff;
+  }
+}
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.card-img-container {
+  height: 200px; // Adjust as needed
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-top {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  background-color: transparent;
+}
+
+/* Dark background for cards with white SVGs */
+.dark-background {
+  background-color: #1a1a2e; // Dark background for the card
+  color: #fff; // Text color
+
+  .card-img-container {
+    background-color: #1a1a2e; // Dark background for the image container
+  }
+
+  .card-title,
+  .card-text {
+    color: #fff;
+  }
+
+  .btn-outline-primary {
+    color: #fff;
+    border-color: #fff;
+    &:hover {
+      background-color: #fff;
+      color: #1a1a2e;
+    }
   }
 }

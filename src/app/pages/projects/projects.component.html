@@ -6,13 +6,18 @@
 
   <div class="row mt-5">
     <!-- Project Item -->
-    <div class="col-md-6 mb-5" *ngFor="let project of projects">
-      <div class="card h-100 shadow-sm">
-        <!-- <img [src]="project.image" class="card-img-top" [alt]="project.title" /> -->
-        <div class="card-body">
+    <div class="col-md-6 col-lg-4 mb-5 d-flex align-items-stretch" *ngFor="let project of projects">
+      <div
+        class="card h-100 shadow-sm"
+        [ngClass]="{ 'dark-background': project.isDarkBackground }"
+      >
+        <div class="card-img-container">
+          <img [src]="project.image" class="card-img-top" [alt]="project.title" />
+        </div>
+        <div class="card-body d-flex flex-column">
           <h5 class="card-title">{{ project.title }}</h5>
-          <p class="card-text">{{ project.description }}</p>
-          <a [routerLink]="project.link" class="btn btn-outline-primary">Learn More</a>
+          <p class="card-text flex-grow-1">{{ project.description }}</p>
+          <a [routerLink]="project.link" class="btn btn-outline-primary mt-auto">Learn More</a>
         </div>
       </div>
     </div>

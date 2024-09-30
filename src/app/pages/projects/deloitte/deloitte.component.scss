@@ -1,0 +1,45 @@
+$primary-color: #2C3E50; // Dark Blue
+$secondary-color: #18BC9C; // Teal
+$background-color: #ECF0F1; // Light Gray
+$text-color: #2C3E50; // Dark Blue
+
+.container {
+  padding: 2rem 0;
+}
+
+h1 {
+  color: $primary-color;
+  margin-bottom: 1.5rem;
+}
+
+.project-overview,
+.project-objective,
+.project-timeline,
+.project-outcomes {
+  margin-bottom: 2rem;
+}
+
+.project-timeline ul,
+.project-outcomes ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.project-timeline ul li,
+.project-outcomes ul li {
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 200px;
+}
+
+.logo-container {
+  text-align: center;
+  padding: 1rem;
+}
+
+p,
+li {
+  color: $text-color;
+}
