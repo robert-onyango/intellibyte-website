@@ -1,5 +1,3 @@
-<!-- src/app/shared/header/header.component.html -->
-
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" routerLink="/">
@@ -9,15 +7,18 @@
     <button
       class="navbar-toggler"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarResponsive"
+      (click)="isNavbarCollapsed = !isNavbarCollapsed"
       aria-controls="navbarResponsive"
-      aria-expanded="false"
+      aria-expanded="!isNavbarCollapsed"
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <div
+      class="collapse navbar-collapse"
+      [ngClass]="{ 'show': !isNavbarCollapsed }"
+      id="navbarResponsive"
+    >
       <ul class="navbar-nav ms-auto">
         <li class="nav-item" routerLinkActive="active">
           <a class="nav-link" routerLink="/">Home</a>
