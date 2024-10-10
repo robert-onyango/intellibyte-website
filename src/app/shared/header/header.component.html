@@ -9,7 +9,7 @@
       type="button"
       (click)="isNavbarCollapsed = !isNavbarCollapsed"
       aria-controls="navbarResponsive"
-      aria-expanded="!isNavbarCollapsed"
+      [attr.aria-expanded]="!isNavbarCollapsed"
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
@@ -21,19 +21,19 @@
     >
       <ul class="navbar-nav ms-auto">
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="/">Home</a>
+          <a class="nav-link" routerLink="/" aria-label="Home">Home</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="/about">About Us</a>
+          <a class="nav-link" routerLink="/about" aria-label="About Us">About Us</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="/services">Services</a>
+          <a class="nav-link" routerLink="/services" aria-label="Services">Services</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="/projects">Projects</a>
+          <a class="nav-link" routerLink="/projects" aria-label="Projects">Projects</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="/contact">Contact Us</a>
+          <a class="nav-link" routerLink="/contact" aria-label="Contact Us">Contact Us</a>
         </li>
       </ul>
     </div>

@@ -1,19 +1,16 @@
-$primary-color: #2C3E50; // Dark Blue
-$secondary-color: #18BC9C; // Teal
-$accent-color: #F39C12; // Orange
+$primary-color: #1a1a2e; // Dark Blue
+$secondary-color: #e94560; // Pinkish-Red
+$hover-color: #ffffff; // White
 $background-color: #ECF0F1; // Light Gray
 $text-color: #2C3E50; // Dark Blue
+$navbar-height: 100px; // Approximate height of the navbar
 
 // Bootstrap overrides
 $theme-colors: (
   "primary": $primary-color,
   "secondary": $secondary-color,
-  "success": $accent-color
+  "success": $hover-color,
 );
-
-
-// Global styles
-$navbar-height: 100px;  /* Approximate height of the navbar */
 
 .navbar {
   background-color: $primary-color;

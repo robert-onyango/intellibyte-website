@@ -1,13 +1,19 @@
-/* src/app/shared/header/header.component.scss */
 .navbar {
-  background-color: #1a1a2e;
+  background-color: #1a1a2e; // Dark background
   padding: 1rem 0;
 
   .nav-link {
-    color: #e94560 !important;
+    color: #e94560 !important; // Initial link color (pinkish-red)
+    transition: color 0.3s ease; // Smooth transition for color change
+
     &:hover,
     &.active {
-      color: #0f3460 !important;
+      color: #ffffff !important; // Change to white on hover for better contrast
+    }
+
+    &:focus {
+      outline: 2px solid #e94560; // Visible focus outline for keyboard navigation
+      outline-offset: 2px;
     }
   }
 
@@ -28,11 +34,13 @@
     border-color: #e94560;
     &:focus {
       box-shadow: none;
+      outline: 2px solid #e94560; // Visible focus for the toggler button
+      outline-offset: 2px;
     }
   }
 
   .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(233,69,96, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(233,69,96,0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
 
   /* Responsive adjustments */
