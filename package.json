@@ -8,7 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:intellibyte-website": "node dist/intellibyte-website/server/server.mjs",
-    "build-and-serve": "ng build && node dist/intellibyte-website/server/server.mjs"
+    "build-and-serve": "ng build && node dist/intellibyte-website/server/server.mjs",
+    "azure:build": "npm run build && cd azure-functions && npm install && npm run build",
+    "azure:start": "cd azure-functions && npm start",
+    "azure:deploy": "npm run azure:build && cd azure-functions && func azure functionapp publish <function-app-name>"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +36,7 @@
     "@angular-devkit/build-angular": "^18.2.4",
     "@angular/cli": "^18.2.4",
     "@angular/compiler-cli": "^18.2.0",
+    "@azure/functions": "^4.7.2",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",

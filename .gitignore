@@ -11,6 +11,12 @@
 npm-debug.log
 yarn-error.log
 
+# Azure Functions
+azure-functions/dist
+azure-functions/node_modules
+azure-functions/local.settings.json
+azure-functions/.env
+
 # IDEs and editors
 .idea/
 .project

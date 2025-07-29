@@ -1,0 +1,9 @@
+bin
+obj
+appsettings.json
+local.settings.json
+node_modules
+dist
+.vscode/settings.json
+.env
+.azure

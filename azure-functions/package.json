@@ -1,0 +1,20 @@
+{
+  "name": "intellibyte-azure-functions",
+  "version": "2.0.0",
+  "description": "Azure Functions for Intellibyte Website - Phase 2 Implementation",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "npm run build && node dist/test.js"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}
